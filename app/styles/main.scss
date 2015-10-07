@@ -20,43 +20,55 @@ body {
   padding: 0.2em 0;
 }
 
-a {
+.Frame {
+  width: 279px;
+  height: 279px;
+  position: relative;
+}
+
+.FrameCorner {
   width: 280px;
   height: 280px;
   background-color: black;
   display: block;
+  position: absolute;
 }
 
-.leftTop {
+.FrameCorner--leftTop {
   clip-path: polygon(50% 0%, 50% 15%, 15% 15%, 15% 50%, 0 50%, 0 0);
+  left: 0;
+  top: 0;
+
   &:hover, &.hover {
     background-image: url(http://lorempixel.com/280/280/abstract/);
   }
 }
 
-.rightTop {
+.FrameCorner--rightTop {
   clip-path: polygon(50% 0%, 50% 15%, 85% 15%, 85% 50%, 100% 50%, 100% 0);
-  margin-left: -281px;
+  right: 0;
+  top: 0;
+
   &:hover, &.hover {
     background-image: url(http://lorempixel.com/280/280/abstract/);
   }
 }
 
-.rightBottom {
+.FrameCorner--rightBottom {
   clip-path: polygon(50% 100%, 50% 85%, 85% 85%, 85% 50%, 100% 50%, 100% 100%);
-  margin-left: -280px;
-  margin-top:-1px;
+  right: 0;
+  bottom: 0;
+
   &:hover, &.hover {
     background-image: url(http://lorempixel.com/280/280/abstract/);
   }
 }
 
-.leftBottom {
+.FrameCorner--leftBottom {
   clip-path: polygon(50% 100%, 50% 85%, 15% 85%, 15% 50%, 0 50%, 0 100%);
-  // background-color: #1e90ff;
-  margin-left: -279px;
-  margin-top:-1px;
-  margin-right: -1px;
+  left: 0;
+  bottom: 0;
+
   &:hover {
     background-color: #1e90ff;
   }
