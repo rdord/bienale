@@ -150,6 +150,12 @@ gulp.task('serve:test', () => {
   gulp.watch('test/spec/**/*.js', ['lint:test']);
 });
 
+gulp.task('deploy', ['build'], () => {
+  return gulp.src('dist')
+    .pipe($.subtree())
+    .pipe($.clean());
+});
+
 // inject bower components
 gulp.task('wiredep', () => {
   gulp.src('app/styles/*.scss')
