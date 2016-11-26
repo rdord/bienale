@@ -2,25 +2,23 @@ extends layouts/default
 
 block content
   .Frame
-    a(href="http://jeu.suvves.com/").FrameCorner.FrameCorner--leftTop
-    a(href="http://site.suvves.com/").FrameCorner.FrameCorner--rightTop
-    a(href="http://talltabs.suvves.com/").FrameCorner.FrameCorner--rightBottom
-    a(href="http://suvves.com/").FrameCorner.FrameCorner--leftBottom
+    a(href="http://strangeshould.com/jeu/").FrameCorner.FrameCorner--leftTop
+    a(href="http://strangeshould.com/site/").FrameCorner.FrameCorner--rightTop
+    a(href="http://strangeshould.com/talltabs/").FrameCorner.FrameCorner--rightBottom
+    a(href="http://strangeshould.com").FrameCorner.FrameCorner--leftBottom
 
-    //- svg(width='0', height='0')
-    //-   clippath#leftTopclipPolygon
-    //-     //- polygon(points='200 250,587 35,300 50,0 0')
-    //-     polygon(points='50 0, 50 15, 15 15, 15 50, 0 50, 0 0')
+    svg(width='0', height='0')
+      defs
+        clippath#leftTopclipPolygon
+          polygon(points='140 0,140 42,42 42,42 140,0 140,0 0')
+
+        clippath#rightTopclipPolygon
+          polygon(points='140 0,140 42,238 42,238 140,280 140,280 0')
+
+        clippath#rightBottomclipPolygon
+          polygon(points='140 280,140 238,238 238,238 140,280 140,280 280')
+
+        clippath#leftBottomclipPolygon
+          polygon(points='140 280,140 238,42 238,42 140,0 140,0 280')
     
-    //- svg(width='0', height='0')
-    //-   clippath#rightTopclipPolygon
-    //-     polygon(points='200 250,587 35,300 50,0 0')
-    
-    //- svg(width='0', height='0')
-    //-   clippath#rightBottomclipPolygon
-    //-     polygon(points='200 250,587 35,300 50,0 0')
-    
-    //- svg(width='0', height='0')
-    //-   clippath#leftBottomclipPolygon
-    //-     polygon(points='200 250,587 35,300 50,0 0')
 
