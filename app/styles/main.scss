@@ -26,6 +26,7 @@ body {
 .FrameCorner--rightBottom:hover,
 .FrameCorner--rightTop.hover,
 .FrameCorner--rightTop:hover {
+    // get a random abstract image on every visit
     background-image: url(http://lorempixel.com/280/280/abstract/);
 }
 
